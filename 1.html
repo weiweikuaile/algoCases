@@ -1,0 +1,34 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+        var test1=[1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9];
+		/* 数组去重方法一*/
+		function DR(arr){
+			var tmp=[];
+			for(var i=0;i<arr.length;i++){
+				if(tmp.indexOf(arr[i])==-1){
+					tmp.push(arr[i])
+				}
+			}
+			return tmp;
+		}
+		//console.log(DR(test1))
+       	/* 数组去重方法二*/
+       	function DR1(arr){
+       		var tmp=[];
+       		for(var i=0,l=arr.length;i<l;i++){
+       			for(var j=i+1;j<l;j++){
+       				if(arr[i]===arr[j]){
+       					j=++i;
+       				}
+       			}
+       			tmp.push(arr[i])
+       		}
+       		return tmp;
+       	}
+       	console.log(DR1(test1))
+       	
+    </script>
+    </body>
+</html>
