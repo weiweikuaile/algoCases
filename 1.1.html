@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+		<title>1.1html</title>
+		<style type="text/css">
+			/*#panel{
+				background-color:#e5eecc;
+				border:solid 1px #c3c3c3;
+			}*/
+			/*canvas{
+				border:1px solid black;
+			}*/
+			div{
+				width:100px;
+				height:100px;
+				background:red;
+				
+				/*animation:a 3s infinite;*/
+				/*默认情况下，动画只播放一次。加入infinite关键字，可以让动画无限次播放,数字出现表示播放几次*/
+				/*animation:10s 3s a linear 2 forwards normal;*/
+				animation:10s 3s a linear 2 forwards normal;
+				animation-play-state:paused;/*必须在animation后边才有效果*/
+				/*10s是动画一个周期持续的时间即duration，3s是延迟的开始展示动画时间即delay,linear是恒速,a指动画效果的名称,,2指动画播放2次,forwards让动画停留在结束状态,normal动画的每次循环都是向前播放。*/
+				/*需要注意的是，浏览器从一个状态向另一个状态过渡，是平滑过渡。steps函数可以实现分步过渡。*/
+				/*分开写是*/
+				  /*-webkit-animation-name:a;
+				  -webkit-animation-duration:3s;
+				  -webkit-animation-timing-function:ease-in-out;/*先加速再减速*/
+				  /*-webkit-animation-delay:0;
+				  -webkit-animation-iteration-count:2;	/*infinite无限次*/
+				  /*-webkit-animation-direction:inherit;*//*alternate*/
+				 /*animation-direction属性定义是否应该轮流反向播放动画。动画播放方式，有两个值。normal和alternate。
+				/*如果设置为 "alternate"，
+				/*则动画会在奇数次数（1、3、5 等等）正常播放，
+				/*而在偶数次数（2、4、6 等等）向后播放。 */
+				/*如果设置为normal时，动画的每次循环都是向前播放。*/
+				/*-webkit-animation-fill-mode:forwards;/*forwards表示让动画停留在结束状态,backwards表示让动画回到第一帧的状态*/
+				 
+			}
+			div:hover{
+				animation-play-state:running;
+			}
+			@keyframes a{
+				0%{
+					margin-left:100px;
+					background:red;
+				}
+				25%{
+					margin-left:125px;
+					background:green;
+				}
+				50%{
+					margin-left:150px;
+					background:yellow;
+				}
+				75%{
+					margin-left:175px;
+					background:blue;
+				}
+				100%{
+					margin-left:200px;
+					background:red;
+				}
+			}
+			/*@-webkit-keyframes a{
+				from{left:0px;}
+				to{left:200px;}
+			}*/
+		</style>
+	</head>
+	<body>
+		<!--<canvas id="myCanvas" width="1500" height=""></canvas>-->
+		
+		<canvas id="q"></canvas>
+    	<div></div>
+		<!--<div id="flip">点我1</div>
+		<div id="panel">美食</div>-->
+		
+		<!--<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">-->
+        <script>
+       	//fillText和strokeText的区别
+       	//createRadialGradient(x,y,r,x1,y1,r1) - 创建一个径向/圆渐变
+       	//视频
+       	//绘制三角形 实心 空心
+		//写成方法draw
+		//很炫的HTML5 Matrix效果
+		
+		
+    	</script>
+	</body>
+</html>
