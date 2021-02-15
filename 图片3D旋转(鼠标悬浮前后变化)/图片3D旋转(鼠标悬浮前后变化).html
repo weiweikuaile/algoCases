@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片3D旋转(鼠标悬浮前后变化)</title>
+</head>
+<body>
+    <div class="main">
+        <ul>
+            <div class="qcontainer">
+                <div class="film">
+                    <div class="face front">
+                        <li class="p1 MPli">
+                            <a class="link-hover" target="_blank" href="http://www.ccyy5.com/cechi/38916.html" title="识骨寻踪第八季">
+                                <img class="lazy" src="./137c10000aa5375bc42c1.jpg" alt="识骨寻踪第八季" style="display:inline;">
+                                <span class="video-bg"></span>
+                                <span class="lzbz">
+                                    <p class="name">识骨寻踪第八季</p>
+                                    <p class="actor">艾米丽</p>
+                                    <p class="actor">美剧</p>
+                                    <p class="actor">2012/美国</p>
+                                </span>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="face back">
+                         <li class="p1">
+                            <a class="link-hover" target="_blank" href="http://www.ccyy5.com/cechi/38916.html" title="识骨寻踪第八季">
+                                <img class="lazy" src="./137c10000aa5375bc42c1.jpg" alt="识骨寻踪第八季" style="display:inline;">
+                                <span class="video-bg"></span>
+                                <span class="lzbz">
+                                    <p class="name">识骨寻踪第八季</p>
+                                    <p class="actor">艾米丽</p>
+                                    <p class="actor">美剧</p>
+                                    <p class="actor">2012/美国</p>
+                                </span>
+                            </a>
+                        </li>
+                    </div>
+                    <p class="vod-list-name"></p>
+                </div>
+            </div>
+        </ul>
+    </div>
+</body>
+<style>
+    .qcontainer{
+        -webkit-perspective:400;
+        float:left;width:180px;margin-right:20px;
+    }
+    .film{
+        width:100%;
+        height:250px;
+         -webkit-transform-style:preserve-3d; 
+        -webkit-transition:1.5s;
+    }
+     .qcontainer:hover .film{
+        -webkit-transform:rotateY(180deg);
+     }
+    .face{
+        position:absolute;
+        -webkit-backface-visibility:hidden;
+    }
+    .face h3{
+        color:white;text-align: center;
+    }
+    .back{-webkit-transform:rotateY(180deg);
+      
+    }
+    .p1 img{
+        width:180px;
+        height:230px;
+    }
+ /*.back{-webkit-transform:rotateY(180deg);-moz-transform:rotateY(180deg);background:-webkit-gradient(linear,left top,left bottom,from(#fdbb5a),to(#db5726));background:-moz-linear-gradient(top,#fdbb5a,#db5726);width:180px;height:230px;-webkit-border-radius:10px;}*/
+</style>
+</html>
