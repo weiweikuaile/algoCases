@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>var与let与const的区别</title>
+    </head>
+    <body>
+    
+    </body>    
+</html>
+<script>
+ function fn(){
+    if(true){
+        console.log(a+'now')
+    }
+    else{
+        var a=1
+        console.log(2)
+    }
+ }
+
+ fn()//分析a ->undefined undefined可以翻译为不明确，not defined可以翻译为未定义
+ //结果显示undefinednow和undefined
+function ff(){
+    let b=1
+}
+ff()
+ console.log(b)
+</script>
